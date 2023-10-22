@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To - Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>To - Do List</h1>
+    </header>
+    <main>
+        <section id="task-form">
+            <h2>Add Task</h2><br>
+            <form id="add-task-form">
+                <div class="input-container">
+                    <label for="task-title">Title:</label>
+                    <input type="text" id="task-title" required>
+                </div>
+                <div class="input-container">
+                    <label for="task-deadline">Deadline:</label>
+                    <input type="date" id="task-deadline" required>
+                </div>
+                <div class="input-container">
+                    <label for="task-priority">Priority:</label>
+                    <select id="task-priority" required>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="task-label">Label:</label>
+                    <input type="text" id="task-label" required>
+                </div>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section id="task-list">
+           
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
